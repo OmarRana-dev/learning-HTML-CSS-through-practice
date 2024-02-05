@@ -1,4 +1,4 @@
-# Building Blocks of Beauty: Learning HTML & CSS Through Practice
+# Code, Build, Learn: Hands-on HTML & CSS Playground
 
 This repo isn't just a collection of code, it's my interactive journey into mastering HTML and CSS! Join me as I break down concepts, tackle challenges, and turn learning into creative expression.
 
