@@ -6,21 +6,37 @@
     <link rel="stylesheet" href="style.css">
     <title>CSS Positions</title>
     <style>
+        body {
+            height: 1500px;
+        }
+
         .container {
             border: 1px solid black;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
-        img {
+        div {
+            margin-top: 20px;
             width: 150px;
-            margin: 10px;
+            height: 150px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            quotes: "'";
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="lumiImg1.jpg" alt="">
-        <img src="lumiImg2.jpg" alt="">
-        <img src="lumiImg1.jpg" alt="">
-        <img src="lumiImg2.jpg" alt="">
-    </div>
+    <section class="container">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </>
 </body>
 </html>
