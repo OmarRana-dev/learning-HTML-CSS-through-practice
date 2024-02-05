@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background-color: #212121;
+    border: 3px solid white;
+    padding: 40px;
+
+}
+
+body {
+    height: 100vh;
+    background-color: grey;
+}
+
+
+/*
+1 Flex box is 1D layout model
+2 flex box deals with layout in one dimension at a time wether row or column.
+3 the main two axis in fles teh main axis and cross axis 
+    -- the main axis defined by "flex-direction" property, and teh cross axis runs perpendicular to it.
+    -- should you choose row or row-reverse, your main axis will run along the row in the inline direction.
+    -- choose column or cl-rev and your main axis wil run from the top of the page to the bottom in the block direction.
+4 so the cross axis runs perpendicular to the main axis like in example.
+    ---- flex-direction: row | row-reverse; main-axis ➡ | cross-axis ⬇
+    ---- flex-direction: column | column-reverse; main-axis ⬇ | cross-axis ➡
+
+5 
+   */
+
+.container {
+    min-height: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /* justify-content: center; */
+    align-content: start;
+    gap: 20px;
+    background-color: slategray;
+
+}
+
+.box {
+    height: 100px;
+    min-width: 100px;
+    max-width: 150px;
+    flex: 1 1 0;
+    background-color: teal;
+}
+.box5 {
+    order: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Flex Box */
+/* Flex box is a 1D layout method */
+
+
+/* This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children. */
+/* .container {
+    /* height: 80%; */
+/* display: flex; */
+/* flex-direction: column;  */
+/* flex-wrap: wrap; */
+/* By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property. */
+
+/* the shorthand for flex-direction & flex-wrap */
+/* use it as per to your desier */
+/* flex-flow: row wrap; */
+
+/* This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible,or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line. */
+/* justify-content: center; */
+/* flex-start, flex-end, center, space-between, space-around, space-evenly;*/
+
+
+/* This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis). */
+/* align-items: center; */
+/* flex-start, flex-end, center, stretch, baseline, first baseline, last baseline start, end, self-start, self-end+ ... safe | unsafe*/
+
+
+/* This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis. */
+/* align-content: start; */
+/* gap: 20px; */
+
+
+/* } */
+
+
+/* and box cintaienr is flex items like: child */
+/* .box { */
+/* min-width: 150px; */
+/* max-width: 300px; */
+/* height: 100px; */
+/* background-color: blueviolet; */
+/* border: 1px solid white; */
+/* order: 5; */
+/* flex-grow: 1; */
+/* } */
+/* .box5 { */
+/* flex-grow: 2; */
+/* } */
+/* .box8 { */
+/* flex-shrink: 6; */
+/* } */
