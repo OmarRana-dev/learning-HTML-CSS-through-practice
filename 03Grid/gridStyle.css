@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+}
+header {
+    height: 3.5rem;
+    display: flex;
+    /* justify content always work on main-axis */
+    justify-content: center;
+    /* align-items always work on cross-axis */
+    align-items: center;
+    background-color: steelblue;
+    color: white;
+}
+
+
+
+.top-contaienr {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1200px;
+    padding: 1rem 1rem 0 1rem;
+    /* border-right: 2px dotted tomato;
+    border-left: 2px dotted tomato; */
+    display: grid;
+    gap: 1rem;
+    /* the minmax is very imprtant when you want to make a responsive desine */
+    grid-template: none / repeat(auto-fill, minmax(min(17rem, 100%), 1fr));
+
+
+    /* justify-items and align-items:
+            These properties are used to align individual items within a CSS grid or flex container. justify-items controls the alignment of items along the row axis (horizontally), while align-items controls the alignment along the column axis (vertically). */
+
+    /* justify-items: center; */
+    /* align-items: end; */
+    /* place-items: center; */
+
+
+    /* justify-content and align-content:
+            These properties are used to align the content as a whole within a CSS grid or flex container. justify-content controls the alignment of the content along the row axis, and align-content controls the alignment along the column axis. */
+    /* The content propertys are work on  */
+    /* justify-content: center; */
+    align-content: end;
+    /* place-content: center; */
+
+
+    /* In summary,
+        while both sets of properties are used for alignment,
+        justify-items and align-items focus on individual item alignment within the container,
+        while justify-content and align-content control the alignment of the entire content within the container. */
+}
+
+
+
+.box {
+    color: white;
+    border: 2px solid lightsalmon;
+    padding: 1rem;
+    background-color: #212131;
+}

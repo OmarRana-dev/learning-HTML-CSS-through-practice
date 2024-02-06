@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
+}
+
+
+header {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head1 {
+    background-color: darkcyan;
+}
+.head2 {
+    background-color: darkslategray;
+}
+.head3 {
+    background-color: darkseagreen;
+}
+
+.content {
+    line-height: 20px;
+}
