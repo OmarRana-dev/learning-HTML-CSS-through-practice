@@ -1,0 +1,48 @@
+body {
+    background-color: #333;
+    color: White;
+}
+
+.box {
+    background-color: paleturquoise;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 2s;
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: cubic-bezier(); */
+    /* animation-direction: alternate; */
+}
+
+@keyframes anime {
+    0% {
+        background-color: aqua;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: red;
+        left: 70%;
+        top: 0px;
+        border-bottom-left-radius: 50%;
+    } 
+    
+    50% {
+        background-color: green;
+        left: 70%;
+        top: 30em;
+        border-bottom-left-radius: 20%;
+    }
+    75% {
+        background-color: blueviolet;
+        left: 0px; 
+        top: 30em;
+    }
+    100% {
+        background-color: yellowgreen;
+        left: 0px;
+        top: 0px;
+    }  
+}
