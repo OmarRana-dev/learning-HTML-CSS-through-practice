@@ -1,0 +1,22 @@
+body {
+  background-color: #444;
+}
+
+.parent {
+  width: 15rem;
+  height: 15rem;
+  border: 0.5rem solid #999;
+  background-color: #ddd;
+}
+
+.box {
+  background-color: white;
+  width: 15rem;
+  height: 15rem;
+  transition: transform 300ms ease-in;
+  /* pointer-events: none; */
+}
+
+.parent.clicked .box {
+  transform: translate(200px, 150px) rotate(20deg);
+}

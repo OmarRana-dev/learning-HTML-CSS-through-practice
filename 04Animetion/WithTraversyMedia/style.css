@@ -1,0 +1,48 @@
+body {
+  background-color: #333;
+  color: white;
+}
+
+.box {
+  background-color: blueviolet;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  /* animation-iteration-count: 5; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: blueviolet;
+    left: 0rem;
+    top: 0rem;
+    border-radius: 0rem;
+  }
+  25% {
+    background-color: red;
+    border-radius: 50% 0 0 0;
+    left: 35rem;
+    top: 0rem;
+  }
+  50% {
+    background-color: steelblue;
+    border-radius: 50% 50% 0 0;
+    left: 35rem;
+    top: 30rem;
+  }
+  75% {
+    background-color: turquoise;
+    border-radius: 50% 50% 50% 0;
+    left: 0rem;
+    top: 30rem;
+  }
+  100% {
+    background-color: blueviolet;
+    border-radius: 50% 50% 50% 50%;
+    top: 0rem;
+    left: 0rem;
+  }
+}
