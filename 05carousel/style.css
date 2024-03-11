@@ -1,0 +1,32 @@
+.carousel-image {
+  display: none;
+}
+
+#active {
+  display: block;
+}
+
+.navigation-circle {
+  cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-navigation {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 1;
+}
+
+.btnContainer {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1rem;
+}
