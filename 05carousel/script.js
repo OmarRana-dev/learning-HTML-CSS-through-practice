@@ -43,7 +43,6 @@ function goToPrevious() {
 }
 
 navigationCircles.forEach((dataIndex) => {
-  console.log(dataIndex.getAttribute("data-index"));
   dataIndex.addEventListener("click", () => {
     showActiveImg(dataIndex.getAttribute("data-index"));
   });
