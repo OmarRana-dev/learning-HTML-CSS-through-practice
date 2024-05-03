@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+#main-box {
+  width: 250px;
+  height: 250px;
+  background-color: #333;
+}
+
+#upper-box {
+  width: 250px;
+  height: 250px;
+  background-color: #344;
+  position: absolute;
+
+  transition: 0.25s;
+  /* transform: perspective(800px) rotateX(50deg); */
+}
+
+#upper-box:hover {
+  /* transform: perspective(700px) rotateZ(50deg); */
+  /* transform: perspective(700px) rotateX(45deg) translateZ(-30px); */
+  /* transform: perspective(700px) rotateX(45deg) translate3d(80px, 40px, 70px); */
+  transform: perspective(700px) scale3d(1, 2, 2.6) rotateX(45deg);
+}
