@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moving Ball</title>
+  </head>
+  <body>
+    <p>Click anywhere to move the ball</p>
+    <div id="ball-id" class="ball"></div>
+  </body>
+
+  <script>
+    const ball = document.querySelector("#ball-id");
+
+    document.addEventListener(
+      "click",
+      (e) => {
+        ball.style.transform = `translateY(${e.clientY - 25}px)`;
+        ball.style.transform += `translateX(${e.clientX - 25}px)`;
+      },
+      false
+    );
+  </script>
+</html>
