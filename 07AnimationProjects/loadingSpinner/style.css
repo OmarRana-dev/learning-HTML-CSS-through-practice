@@ -1,0 +1,32 @@
+.boxer {
+  height: 80vh;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  display: block;
+  width: 62px;
+  height: 62px;
+  animation: fancy-spin 2500ms linear infinite;
+}
+
+@keyframes fancy-spin {
+  0% {
+    transform: rotate(0turn) scale(1);
+  }
+  25% {
+    transform: rotate(1turn) scale(1);
+  }
+  50% {
+    transform: rotate(1turn) scale(1.5);
+  }
+  75% {
+    transform: rotate(0turn) scale(1.5);
+  }
+  100% {
+    transform: rotate(0turn) scale(1);
+  }
+}
