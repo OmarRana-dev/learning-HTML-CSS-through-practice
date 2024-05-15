@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 32px 0;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+section {
+  display: flex;
+  gap: 16px;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  background-color: slateblue;
+  padding: 8px;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(calc(var(--bounce-offset) * -1));
+  }
+}
+
+.box {
+  animation: bounce 450ms alternate infinite
+    cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+.box.one {
+  --bounce-offset: 60px;
+  animation-duration: 500ms;
+}
+
+.box.two {
+  --bounce-offset: 80px;
+  animation-duration: 600ms;
+}
+
+.box.three {
+  --bounce-offset: 100px;
+  animation-duration: 700ms;
+}
