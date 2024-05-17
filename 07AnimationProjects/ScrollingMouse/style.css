@@ -35,8 +35,9 @@
   display: inline-block;
 }
 
-.hero .mourse {
-    
+.hero .mouse {
+  position: absolute;
+  bottom: 2rem;
 }
 
 .content {
@@ -48,4 +49,22 @@
 .content h2 {
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 10px;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+}
+
+#mouse-icon #scroll-pointer {
+  animation: scrollDown 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    infinite;
 }
