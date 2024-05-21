@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Responsive Images</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- <img
+      width="100%"
+      srcset="
+        imgs/sea.jpg,
+        imgs/painting-darkmountain.jpg 2x,
+        imgs/waves.jpg                 3x
+      "
+      src="imgs/mountains_highres.png"
+      alt="A baby smiling with a yellow headband."
+    /> -->
+    <!-- <img
+      width="100%"
+      srcset="
+        imgs/painting-darkmountain.jpg 800w,
+        imgs/waves.jpg                 500w
+      "
+      sizes="(max-width: 500px) 500px, (max-width: 600px) 600px, 800px"
+      src="imgs/mountains_highres.png"
+      alt="A baby smiling with a yellow headband."
+    /> -->
+
+    <div class="page-wrap">
+      <header>Cool Babies Website</header>
+
+      <main>
+        <h1>Breaking News: Anything on Babies Heads is Cute</h1>
+
+        <p>Science has proven it.</p>
+
+        <img
+          alt="A cute baby with a cap on his head"
+          width="2000"
+          height="1134"
+          src="https://res.cloudinary.com/css-tricks/image/upload/c_scale,f_auto,q_auto,w_600/v1587561606/baby_p7ngmm.jpg"
+          srcset="
+            https://res.cloudinary.com/css-tricks/image/upload/c_scale,f_auto,q_auto,w_320/v1587561606/baby_p7ngmm.jpg   320w,
+            https://res.cloudinary.com/css-tricks/image/upload/c_scale,f_auto,q_auto,w_600/v1587561606/baby_p7ngmm.jpg   600w,
+            https://res.cloudinary.com/css-tricks/image/upload/c_scale,f_auto,q_auto,w_1200/v1587561606/baby_p7ngmm.jpg 1200w,
+            https://res.cloudinary.com/css-tricks/image/upload/c_scale,f_auto,q_auto,w_2000/v1587561606/baby_p7ngmm.jpg 2000w
+          "
+          sizes="
+    (max-width: 500px) calc(100vw - 2rem), 
+    (max-width: 700px) calc(100vw - 6rem),
+    calc(100vw - 9rem - 200px)
+  "
+        />
+      </main>
+
+      <aside>
+        <div class="sidebar-module"></div>
+        <div class="sidebar-module"></div>
+        <div class="sidebar-module"></div>
+        <div class="sidebar-module"></div>
+      </aside>
+
+      <footer>copyright babies</footer>
+    </div>
+  </body>
 </html>
